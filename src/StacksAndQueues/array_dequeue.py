@@ -35,12 +35,15 @@ class dequeue:
 # main method
 if __name__ == "__main__":
     queue_length = input("Length of Queue : \n")
+
     queue_string_input = input(f"Enter {queue_length} elements separated by comma : \n")
 
     queue_elements = queue_string_input.split(",")
     queue = dequeue(queue_elements)
+
     queue.print_elements()
     queue.popStart()
     queue.print_elements()
+
     queue.popEnd()
     queue.print_elements()
